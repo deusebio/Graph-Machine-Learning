@@ -1,7 +1,7 @@
 FROM jupyter/scipy-notebook as base
 
 ARG user=euler
-ARG branch=chap6
+ARG branch=main
 
 USER root
 
