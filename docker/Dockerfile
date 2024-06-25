@@ -35,6 +35,10 @@ RUN conda create -n chap3 python=3.8
 RUN conda run -n chap3 pip install -r Chapter03/requirements.txt
 RUN conda run -n chap3 python -m ipykernel install --name chap3 --user
 
+RUN conda create -n chap6 python=3.8
+RUN conda run -n chap6 pip install -r Chapter06/requirements.txt
+RUN conda run -n chap6 python -m ipykernel install --name chap6 --user
+
 EXPOSE 8888
 
 ENTRYPOINT jupyter notebook --no-browser --port 8888 --NotebookApp.token='' --NotebookApp.password=''
