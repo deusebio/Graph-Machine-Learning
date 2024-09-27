@@ -24,7 +24,7 @@ jobs:
           - name: chap6
             folder: Chapter06
     runs-on: ubuntu-latest
-    name: Build and Test image ${{ matrix.chapter.name }}
+    name: Image ${{ matrix.chapter.name }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
