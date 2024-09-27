@@ -22,7 +22,7 @@ jobs:
           folder: Chapter03
         - name: chap6
           folder: Chapter06
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     name: Build and Test image ${{ matrix.name }}
     steps:
       - name: Checkout repository
