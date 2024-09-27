@@ -14,16 +14,17 @@ jobs:
       fail-fast: false
       max-parallel: 5
       matrix:
-        - name: chap1
-          folder: Chapter01
-        - name: chap2
-          folder: Chapter02
-        - name: chap3
-          folder: Chapter03
-        - name: chap6
-          folder: Chapter06
+        chapter:
+          - name: chap1
+            folder: Chapter01
+          - name: chap2
+            folder: Chapter02
+          - name: chap3
+            folder: Chapter03
+          - name: chap6
+            folder: Chapter06
     runs-on: ubuntu-latest
-    name: Build and Test image ${{ matrix.name }}
+    name: Build and Test image ${{ matrix.chapter.name }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -37,7 +38,7 @@ jobs:
         id: build
         run: |
           cd docker
-          docker build . --target ${{ matrix.name }} \
+          docker build . --target ${{ matrix.chapter.name }} \
             --build-arg branch=${{ steps.extract_branch.outputs.branch }} \
             -t graph-machine-learning:latest --no-cache 
 
@@ -55,4 +56,4 @@ jobs:
           # Run tests
           cd docker
 
-          ./tests.sh ${{ matrix.folder }}
+          ./tests.sh ${{ matrix.chapter.folder }}
