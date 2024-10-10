@@ -12,6 +12,7 @@ py-modules = []
 python = "~3.8"
 ipykernel = ">=6.0.0" 
 matplotlib = "==3.2.2"
+networkx = "==2.5"
 tensorflow = "^2.6.0" 
 tensorflow-io-gcs-filesystem = "==0.21.0" # This needs pinning - see https://stackoverflow.com/a/76477590 
 stellargraph= "^1.2.1"
