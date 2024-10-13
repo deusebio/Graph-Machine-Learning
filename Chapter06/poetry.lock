@@ -3306,14 +3306,7 @@ description = "PyTorch Extension Library of Optimized Autograd Sparse Matrix Ope
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "torch_sparse-0.6.18+pt21cpu-cp310-cp310-linux_x86_64.whl", hash = "sha256:0d3df435176b528bddad94c7e1a9913a7c952136317578d08535dad4b40c3b08"},
-    {file = "torch_sparse-0.6.18+pt21cpu-cp310-cp310-win_amd64.whl", hash = "sha256:2c0246dc41e918bde0744c908b1604764f76b61d7d56ab595550411e89db6367"},
-    {file = "torch_sparse-0.6.18+pt21cpu-cp311-cp311-linux_x86_64.whl", hash = "sha256:b04fe1748f21bd4109d92ff8ff151a402eecce2228edf63f250b5eb96931d564"},
-    {file = "torch_sparse-0.6.18+pt21cpu-cp311-cp311-win_amd64.whl", hash = "sha256:0d1f6781038601f43ea1c9695a91ea290d05a4a81c53f2c8da02610ec85d097c"},
     {file = "torch_sparse-0.6.18+pt21cpu-cp38-cp38-linux_x86_64.whl", hash = "sha256:fe2ea180baa399ebb1d695cad1b36e1ffb543e04af30f7880edfa626fbf69e9e"},
-    {file = "torch_sparse-0.6.18+pt21cpu-cp38-cp38-win_amd64.whl", hash = "sha256:c76f024ff9f4bac0bb62ec4e5b3eac62d4f9f7e4f70a0a499e7d2698a6b82b5c"},
-    {file = "torch_sparse-0.6.18+pt21cpu-cp39-cp39-linux_x86_64.whl", hash = "sha256:407d1d5a4a1372f2afcae2f0767e132d1fb46b4935a0609ab42fc28a092cdc3b"},
-    {file = "torch_sparse-0.6.18+pt21cpu-cp39-cp39-win_amd64.whl", hash = "sha256:752ced5d2fe1a1cb4ad61429e65cb92bce35b73d0894c807c0fbe8b1a5c4be2c"},
 ]
 
 [package.dependencies]
@@ -3323,9 +3316,8 @@ scipy = "*"
 test = ["pytest", "pytest-cov"]
 
 [package.source]
-type = "legacy"
-url = "https://data.pyg.org/whl/torch-2.1.0+cpu.html"
-reference = "torch-wheels"
+type = "url"
+url = "https://data.pyg.org/whl/torch-2.1.0%2Bcpu/torch_sparse-0.6.18%2Bpt21cpu-cp38-cp38-linux_x86_64.whl"
 
 [[package]]
 name = "torchmetrics"
@@ -3768,4 +3760,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.8"
-content-hash = "6cb83f6fa50606c3d81606621c3c497758f5ab884fd041cf0863c84c78926aab"
+content-hash = "27a8c6085d1f76b37115b32f3578b9b04999c908e74adc94e7d23aa71f9a3d27"
