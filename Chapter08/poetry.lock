@@ -4146,6 +4146,23 @@ modelhub = ["huggingface_hub"]
 test = ["onnx", "onnxruntime", "pytest", "pytest-cov"]
 
 [[package]]
+name = "torch-scatter"
+version = "2.1.2+pt21cpu"
+description = "PyTorch Extension Library of Optimized Scatter Operations"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "torch_scatter-2.1.2+pt21cpu-cp38-cp38-linux_x86_64.whl", hash = "sha256:2876a541e5428a21fffa8fee97dc3fa833266640e7fb1ec3aab6e8bafa0a2df8"},
+]
+
+[package.extras]
+test = ["pytest", "pytest-cov"]
+
+[package.source]
+type = "url"
+url = "https://data.pyg.org/whl/torch-2.1.0%2Bcpu/torch_scatter-2.1.2%2Bpt21cpu-cp38-cp38-linux_x86_64.whl"
+
+[[package]]
 name = "torch-sparse"
 version = "0.6.18+pt21cpu"
 description = "PyTorch Extension Library of Optimized Autograd Sparse Matrix Operations"
@@ -4660,4 +4677,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.8"
-content-hash = "6262bc1bf8759debdd431ec4b963088a206686a86baa126d4871239147166cc3"
+content-hash = "40b4aee571e46a7a8d292b7e7c7239854913f85c949cce1d00a65428d7654c85"
