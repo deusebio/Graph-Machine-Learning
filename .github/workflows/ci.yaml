@@ -67,8 +67,8 @@ jobs:
           if [ "${{ matrix.chapter.name }}" == "chap10" ];
           then
             docker run --rm --detach --name janusgraph \
-	      --publish=8182:8182 \
-	      janusgraph/janusgraph:1.1.0
+              --publish=8182:8182 \
+              janusgraph/janusgraph:1.1.0
 
             docker run --rm --detach --name neo4j \
               --publish=7474:7474 --publish=7687:7687 \
