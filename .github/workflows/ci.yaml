@@ -15,24 +15,24 @@ jobs:
       max-parallel: 5
       matrix:
         chapter:
-          # - name: chap1
-          #   folder: Chapter01
-          # - name: chap2
-          #   folder: Chapter02
-          # - name: chap3
-          #   folder: Chapter03
-          # - name: chap4
-          #   folder: Chapter04
-          # - name: chap5
-          #   folder: Chapter05
-          # - name: chap6
-          #   folder: Chapter06
-          # - name: chap7
-          #   folder: Chapter07
-          # - name: chap8
-          #   folder: Chapter08
-          # - name: chap9
-          #   folder: Chapter09
+          - name: chap1
+            folder: Chapter01
+          - name: chap2
+            folder: Chapter02
+          - name: chap3
+            folder: Chapter03
+          - name: chap4
+            folder: Chapter04
+          - name: chap5
+            folder: Chapter05
+          - name: chap6
+            folder: Chapter06
+          - name: chap7
+            folder: Chapter07
+          - name: chap8
+            folder: Chapter08
+          - name: chap9
+            folder: Chapter09
           - name: chap10
             folder: Chapter10
     runs-on: ubuntu-latest
