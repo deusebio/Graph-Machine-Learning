@@ -37,7 +37,7 @@ jobs:
 #            folder: Chapter10
           - name: chap13
             folder: Chapter13
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     name: Image ${{ matrix.chapter.name }}
     steps:
       - name: Checkout repository
