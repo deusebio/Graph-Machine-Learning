@@ -110,7 +110,7 @@ jobs:
             --env KAGGLE_KEY=${KAGGLE_TOKEN} \
             --env NEO4J_HOST=neo4j \
             --env JANUSGRAPH_HOST=janusgraph \
-	    --env OLLAMA_HOST=ollama \
+            --env OLLAMA_HOST=ollama \
             graph-machine-learning:latest
           docker network connect my-network graph-machine-learning-box
 
