@@ -104,7 +104,7 @@ jobs:
               --env NEO4J_apoc_export_file_enabled=true \
               --env NEO4J_apoc_import_file_enabled=true \
               --env NEO4J_apoc_import_file_use__neo4j_config=true \
-	      neo4j:5.26.0
+              neo4j:5.26.0
             docker network connect my-network neo4j
 
             docker run --rm --detach --name ollama \
