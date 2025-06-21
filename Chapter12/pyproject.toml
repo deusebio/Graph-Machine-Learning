@@ -13,7 +13,7 @@ py-modules = []
 python = "~3.10"
 ipykernel = ">=6.0.0" 
 matplotlib = "==3.2.2"
-# numpy = "==1.21.6"
+numpy = ">=1.26,<2.0"
 # networkx = "==2.5"
 torch = "^2.1.0"
 torch_geometric = "^2.5.2"
